@@ -15,6 +15,17 @@
 			</div>
 		</div>
 	</div>
+	<div class="main-upload mt-3">
+		<h1 class="text-center">Give it a try!</h1>
+		<div class="dropzone" fileDnd (fileDropped)="onFileDropped($event)">
+			<input type="file" id="fileDropRef"/>
+			<img class="file-image" src="assets/4341078.png" alt=""/>
+			<h3>Drag and drop file here</h3>
+			<h3>or</h3>
+			<label for="fileDropRef">Browse for file</label>
+		</div>
+	</div>
+	<br>
 	<div class="main-how mt-3 text-center">
 		<h1>How it works</h1>
 		<img class="how-icon mt-3" src="assets/4341069.png"/>
@@ -22,32 +33,18 @@
 	    	<p class="bg-light p-3">
 				When you upload a document to Drop, you will receive
 				a link that you can send to your friends and they will
-				be able to download your document! But remember,
-				the link will expire in 1 hour after uploading so
+				be able to download your document! The link will expire after an hour so
 				we can keep the service free and functional for
 				everyone. No registration is required and you can
 				upload documents that are not larger than 200
 				megabytes.
 			</p>
     	</div>
-    	<img class="how-icon mt-5" src="assets/4341157.png"/>
+    	<img class="how-icon mt-5" src="assets/595759.png"/>
     	<div class="p-text bg-light mt-3 w-50 mx-auto">
 	    	<p class="bg-light p-3">
-				Upon uploading a document, the document will be
-				scanned using the powerful VirusTotal engine, so you
-				can be sure that an uploaded document does not
-				contain malicious content.
+				Upon uploading a document, the document is encrypted and saved on the server. If a data breach happens, you can be sure your files cannot be accessed without the link you received.
 			</p>
-    	</div>
-    	<div class="main-upload mt-3">
-    		<h1>Give it a try!</h1>
-    		<div class="dropzone" fileDnd (fileDropped)="onFileDropped($event)">
-    			<input type="file" id="fileDropRef"/>
-    			<img class="file-image" src="assets/4341078.png" alt=""/>
-    			<h3>Drag and drop file here</h3>
-    			<h3>or</h3>
-    			<label for="fileDropRef">Browse for file</label>
-    		</div>
     	</div>
     	<br>
 	</div>
