@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
     else{
       let formData = new FormData();
       formData.append("file", file)
-      let upload = this.http.post("http://localhost:8000/uploadfile/", formData)
+      let upload = this.http.post("http://localhost:8000/uploadfile/", formData);
       upload.subscribe(data => {
           if (data["success"] == true){
             //Will figure out how to create a proper link in production..
@@ -38,10 +38,12 @@ export class HomeComponent implements OnInit {
             linkModal.show()
           }
           else{
-            console.log(data["error"])
+            this.toastr.error(data["error"], "Error!", { positionClass: "toast-bottom-right" })
           }
+      },
+      error => {
+        this.toastr.error("An unknown error occured, the server may be offline. Try again later.", "Error!", { positionClass: "toast-bottom-right" })
       })
     }
   }
-
 }
