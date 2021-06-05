@@ -2,8 +2,6 @@
 	<div class="main">
 		<div class="navigation inline pt-4">
 			<a class="text-decoration-none text-white fs-3" href="#">Drop</a>
-			<div class="navigation-spacer"></div>
-			<a class="text-decoration-none text-white fs-3" href="#">About</a>
 		</div>
 		<div class="main-content text-center">
 			<h1 class="display-2 text-white m-0">Avoid Discord's</h1>
@@ -47,6 +45,23 @@
 			</p>
     	</div>
     	<br>
+	</div>
+	<div class="modal fade" id="linkModal" tabindex="-1" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">File successfully uploaded!</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <p>Link: <a style="color:#570090;" href="{{ fileLink }}">{{ fileLink }}</a></p>
+	        <p>(This is the only time you'll get to see the link.)</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
 	</div>
 	<footer class="mt-5 border-top text-center">
 		<div class="container p-3">

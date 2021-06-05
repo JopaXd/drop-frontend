@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import '~ngx-toastr/toastr';
+
 
 * { 
     margin: 0;
@@ -7,7 +9,7 @@
 }
 
 html, body {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif !important;
     min-height: 100vh;
     min-width: 100vh;
 }
